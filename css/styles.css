@@ -246,14 +246,15 @@ background-size: cover;
 
   transition: background-color var(--animation);
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--activ-btn);
-  
 }
 
 /* Заголовки секцій */
-.section-title {
+
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -264,21 +265,21 @@ background-size: cover;
 
 /* розділ Особливості */
 
-.feature-section {
-padding-top: 94px;
-padding-bottom: 94px;
+.feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.feature-container {
-display: flex;
-gap: 30px;
+.feature__list {
+  display: flex;
+  gap: 30px;
 }
 
-.item-feature {
+.feature__item {
   flex-basis: calc((100% - 90px) / 4);
-  }
+}
 
-.icon-box {
+.feature__icon-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,7 +289,7 @@ gap: 30px;
   margin-bottom: 30px;
 }
   
-.feature-title {
+.feature__item-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
@@ -299,19 +300,19 @@ gap: 30px;
 
 /* секція " Чим ми займаємося" */
 
-.work-section {
+.work {
   padding-bottom: 94px;
 }
-.work {
+.work__list {
   display: flex;
   gap: 30px;
 }
 
-.item-work {
+.work__item {
   position: relative;
 }
   
-.label-box {
+.work__label-box {
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -324,7 +325,7 @@ gap: 30px;
   
 }
   
-.label-title {
+.work__label-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -333,8 +334,8 @@ gap: 30px;
   text-transform: uppercase;
 }
 
-
 /* ceкція Наша команда */
+
 .team {
   background-color: var(--team-background);
   font-size: 16px;
@@ -410,22 +411,22 @@ gap: 30px;
 
 /* Постійні клієнти */
 
-.clients-section {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.сlients-list {
+.сlients__list {
   display: flex;
   gap: 30px;
 }
 
-.item-client {
+.clients__item {
   flex-basis: calc((100% - 150px) / 6);
  }
 
 
-.clients-link {
+.clients__link {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -435,19 +436,19 @@ border-radius: 4px;
 transition: color var(--animation), border-color var(--animation); 
 }
 
-.clients-icon {
+.clients__icon {
   fill: var(--social-icons);
   transition: fill var(--animation);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   color: var(--accent-bg-color);
   border: 1px solid var(--accent-text-color);
 }
 
-.item-client:hover .clients-icon,
-.item-client:focus .clients-icon {
+.clients__item:hover .clients__icon,
+.clients__item:focus .clients__icon {
   fill: currentColor;
 }
 
