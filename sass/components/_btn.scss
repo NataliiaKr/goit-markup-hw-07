@@ -1,10 +1,8 @@
 /* кнопка загальні стилі та кнопка замовлення послуги*/
 .btn {
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    letter-spacing: 0.06em;
+    @include fonts(700, 16px, 1.87, 0.06em);
+    
     cursor: pointer;
 
     color: var(--second-text-color);

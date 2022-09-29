@@ -374,7 +374,7 @@ background-size: cover;
 }
 
 .team-text {
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 
 /* socials */
@@ -462,6 +462,7 @@ transition: color var(--animation), border-color var(--animation);
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 address {
@@ -498,7 +499,6 @@ address {
 /* Cоцмережі в футері*/
 
 .footer-socials {
-  margin-top: 12px;
   margin-left: 70px;
   display: block;
 }
@@ -525,8 +525,8 @@ address {
 
 /* Підписка в футері */
 .subscription{
-  margin-top: 12px;
-  margin-left: 93px;
+  margin-left: auto;
+  display: block;
 }
 
 .subscription-title {
@@ -549,6 +549,7 @@ address {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
+  color: var(--second-text-color);
   background-color: var(--second-background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -758,6 +759,7 @@ address {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
+  padding: 40px;
   background-color: var(--background-color);
   transition: transform 400ms linear;
 }
@@ -787,10 +789,6 @@ address {
 .modal-btn:hover .close-icon,
 .modal-btn:focus .close-icon {
   fill: var(--accent-text-color);
-}
-
-.modal-window {
-  padding: 40px;
 }
 
 .modal-title {
@@ -870,6 +868,7 @@ textarea::placeholder {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  resize: n;
 }
 
 .icon-checked {

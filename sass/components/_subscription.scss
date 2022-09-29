@@ -1,14 +1,12 @@
 /* Підписка в футері */
 .subscription {
-    margin-top: 12px;
-    margin-left: 93px;
+    margin-left: auto;
+    display: block;
 }
 
 .subscription-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include fonts(700, 14px, 1.14, 0.03em);
+    
     text-transform: uppercase;
     color: var(--second-text-color);
     margin-bottom: 20px;
@@ -24,6 +22,7 @@
     width: 358px;
     height: 50px;
     padding: 15px 16px;
+    color: var(--second-text-color);
     background-color: var(--second-background-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -31,9 +30,8 @@
         4px rgba(0, 0, 0, 0.15);
 
     &::placeholder {
-        font-size: 16px;
-        line-height: calc(20 / 16);
-        letter-spacing: 0.03em;
+        @include fonts(400, 16px, 1.25, 0.03em);
+        
         color: rgba(255, 255, 255, 0.6);
     }
 }

@@ -142,6 +142,7 @@ img {
   padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -162,6 +163,7 @@ img {
   gap: 10px;
   color: var(--primary-text-color);
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -205,7 +207,7 @@ img {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
   width: 218px;
@@ -260,6 +262,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -308,7 +311,7 @@ img {
 .team {
   background-color: var(--team-background);
   font-size: 16px;
-  line-height: 1.1875;
+  line-height: 1.19;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -381,6 +384,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 address {
@@ -443,7 +449,7 @@ address {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--second-text-color);
@@ -469,7 +475,8 @@ address {
 .section__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1666666667;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
   text-align: center;
   margin-bottom: 50px;
@@ -501,12 +508,14 @@ address {
 .team-list-title {
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
 
 .team-text {
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 
 /* socials */
@@ -575,7 +584,6 @@ address {
 
 /* Cоцмережі в футері*/
 .footer-socials {
-  margin-top: 12px;
   margin-left: 70px;
   display: block;
 }
@@ -603,8 +611,8 @@ address {
 
 /* Підписка в футері */
 .subscription {
-  margin-top: 12px;
-  margin-left: 93px;
+  margin-left: auto;
+  display: block;
 }
 
 .subscription-title {
@@ -633,6 +641,7 @@ address {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
+  color: var(--second-text-color);
   background-color: var(--second-background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -640,30 +649,35 @@ address {
           box-shadow: 0px, 4px rgba(0, 0, 0, 0.15);
 }
 .subscription-input::-webkit-input-placeholder {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .subscription-input::-moz-placeholder {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .subscription-input:-ms-input-placeholder {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .subscription-input::-ms-input-placeholder {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .subscription-input::placeholder {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -721,7 +735,7 @@ address {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
   padding: 6px 22px;
@@ -770,7 +784,7 @@ address {
 .project-description {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5555555556;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
@@ -868,6 +882,7 @@ address {
           transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
+  padding: 40px;
   background-color: var(--background-color);
   -webkit-transition: -webkit-transform 400ms linear;
   transition: -webkit-transform 400ms linear;
@@ -906,10 +921,6 @@ address {
 .modal-btn:hover .close-icon,
 .modal-btn:focus .close-icon {
   fill: var(--accent-text-color);
-}
-
-.modal-window {
-  padding: 40px;
 }
 
 .modal-title {
@@ -969,7 +980,7 @@ address {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 }
@@ -992,36 +1003,41 @@ address {
 }
 
 textarea::-webkit-input-placeholder {
+  font-weight: 400;
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 textarea::-moz-placeholder {
+  font-weight: 400;
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 textarea:-ms-input-placeholder {
+  font-weight: 400;
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 textarea::-ms-input-placeholder {
+  font-weight: 400;
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 textarea::placeholder {
+  font-weight: 400;
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -1031,6 +1047,7 @@ textarea::placeholder {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  resize: none;
 }
 
 .icon-checked {
@@ -1055,8 +1072,9 @@ textarea::placeholder {
 
 .agreement-text {
   margin-left: 7px;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.7142857143;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 

@@ -20,11 +20,8 @@
 
 
 .project-description {
+    @include fonts(400, 18px, 1.56, 0.03em);
 
-    font-weight: 400;
-    font-size: 18px;
-    line-height: calc(28/18);
-    letter-spacing: 0.03em;
     color: var(--second-text-color);
 }
 
@@ -73,10 +70,8 @@
 }
 
 .project-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include fonts(700, 18px, 2, 0.06em);
+    
     color: var(--title-text-color);
     margin-bottom: 8px;
 }

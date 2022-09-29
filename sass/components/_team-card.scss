@@ -14,12 +14,12 @@
 }
 
 .team-list-title {
-    font-weight: 500;
-    font-size: 16px;
+    @include fonts(500,16px);
+    
     color: var(--title-text-color);
     margin-bottom: 10px;
 }
 
 .team-text {
-    margin-bottom: 28px;
+    margin-bottom: 16px;
 }

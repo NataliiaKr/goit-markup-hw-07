@@ -24,9 +24,8 @@
     }
 
     &__item-title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.17;
+        @include fonts(700, 14px, 1.17);
+        
         color: var(--title-text-color);
         text-transform: uppercase;
         margin-bottom: 10px;

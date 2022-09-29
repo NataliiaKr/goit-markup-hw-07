@@ -42,9 +42,8 @@
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--title-text-color);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include fonts(500, 14px, 1.14, 0.02em);
+    
     text-decoration: none;
     transition: color var(--animation);
 
@@ -59,9 +58,8 @@
     align-items: center;
     gap: 10px;
     color: var(--primary-text-color);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include fonts(500, 14px, 1.14, 0.02em);
+    
     text-decoration: none;
     transition: color var(--animation);
 
